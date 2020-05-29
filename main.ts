@@ -38,11 +38,11 @@ namespace myTiles {
 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
 `
 }
-controller.combos.attachCombo("A+A", function () {
-    effects.starField.startScreenEffect(10000)
-})
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     effects.blizzard.startScreenEffect(10000)
+})
+controller.combos.attachCombo("A+B", function () {
+    effects.starField.startScreenEffect(10000)
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     effects.clouds.startScreenEffect(10000)
